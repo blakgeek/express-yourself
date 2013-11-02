@@ -26,8 +26,8 @@ public class Rhino {
     @Test
     public void basic() throws Exception {
 
-        String helloworld = "print('sup bitches?')";
-        engine.eval(helloworld);
+        String sup = "print('sup yall?')";
+        engine.eval(sup);
     }
 
     @Test
