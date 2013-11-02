@@ -36,7 +36,6 @@ public class Rhino {
         String sup = "'sup [' + name + '] ?'";
         engine.put("name", "Carlos");
         assertEquals("sup [Carlos] ?", engine.eval(sup));
-
     }
 
     @Test
@@ -63,5 +62,13 @@ public class Rhino {
 
     private boolean evalAnyToBoolean(String script) throws Exception {
         return (Boolean) engine.eval("!!(" + script + ")");
+    }
+
+    @Test
+    public void dates() throws Exception {
+
+        String expression = "date";
+        String isoDateOnly = "1976-12-15";
+
     }
 }
