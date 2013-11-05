@@ -67,8 +67,10 @@ public class Rhino {
     @Test
     public void dates() throws Exception {
 
-        String expression = "date";
-        String isoDateOnly = "1976-12-15";
+        String expression = "Date.parse('2007-03-01T13:00:00Z')";
+        String isoDateOnly = "12102013";
+        engine.put("datapoint", isoDateOnly);
+        System.out.println(engine.eval(expression));
 
     }
 }
